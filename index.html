@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>RecipeBook</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
 </head>
 
 <body>
@@ -17,35 +18,91 @@
         <h1><br></h1>
         <span class="no_select">&#8212;</span>
     </div>
-    <script>
-        function reveal() {
-            var reveals = document.querySelectorAll(".reveal");
-
-            for (var i = 0; i < reveals.length; i++) {
-                var windowHeight = window.innerHeight;
-                var elementTop = reveals[i].getBoundingClientRect().top;
-                var elementVisible = 1;
-
-                if (elementTop < windowHeight - elementVisible) {
-                    reveals[i].classList.add("active");
-                } else {
-                    reveals[i].classList.remove("active");
-                }
-            }
-        }
-
-        window.addEventListener("scroll", reveal);
-
-    </script>
     <main>
         <article>
-            <div class="reveal">
+            <div class="scroll_animation">
                 <section>
                     <header>
-                        <h2>Favourite Recipes</h2>
+                        <h2>Favourite</h2>
                     </header>
+                    <div class="flex_container">
+                        <div class="food_container">
+                            <img src="image/Skyrowe pancakes z bananem i borówkami.jpg" alt="pancakes">
+                            <div class="overlay">
+                                <p>Skyrowe pancakes</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
             </div>
-            </section>
+
+
+            <div class="scroll_animation">
+
+                <section>
+                    <header>
+                        <h2>All Recipes</h2>
+                    </header>
+                    <div class="flex_container">
+
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                        <div class="food_container">
+                            <img src="image/" alt="">
+                            <div class="overlay">
+                                <p>FOOD NAME</p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </article>
 
     </main>
