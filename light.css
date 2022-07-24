@@ -37,7 +37,7 @@ body {
   position: absolute;
   bottom: 0;
 }
-#no-select,
+.no-select,
 h1,
 h2 {
   -webkit-touch-callout: none; /* iOS Safari */
@@ -90,7 +90,8 @@ main {
   transition: all 0.1s ease-in-out;
   overflow: hidden;
 }
-.food-container:hover {
+.food-container:hover,
+.showBtn:hover {
   -webkit-transform: scale(1.1);
   -moz-transform: scale(1.1);
   -ms-transform: scale(1.1);
@@ -154,12 +155,25 @@ footer {
 .showBtn {
   opacity: 1;
   transform: translateY(0);
+  -webkit-box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+  -moz-box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+  box-shadow: 8px 8px 24px -10px rgba(66, 68, 90, 1);
+}
+
+#switch-mode,
+#switch-mode p {
+  border: none;
+  outline: none;
+  background: none;
+  margin: 0;
+  cursor: pointer;
 }
 
 /* Extra small devices (phones, 600px and down) */
 @media (max-width: 600px) {
   .top-box h1,
-  .top-box span {
+  .top-box span,
+  #switch-mode p {
     font-size: 3rem;
   }
   main {
@@ -177,7 +191,8 @@ footer {
 /* Small devices (portrait tablets and large phones, 600px and up) */
 @media (min-width: 600px) {
   .top-box h1,
-  .top-box span {
+  .top-box span,
+  #switch-mode p {
     font-size: 5rem;
   }
   .scroll-animation h2 {
@@ -192,7 +207,8 @@ footer {
 /* Medium devices (landscape tablets, 768px and up) */
 @media (min-width: 768px) {
   .top-box h1,
-  .top-box span {
+  .top-box span,
+  #switch-mode p {
     font-size: 5rem;
   }
   .scroll-animation h2 {
@@ -215,7 +231,8 @@ footer {
 /* Extra large devices (large laptops and desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .top-box h1,
-  .top-box span {
+  .top-box span,
+  #switch-mode p {
     font-size: 8rem;
   }
   main {
