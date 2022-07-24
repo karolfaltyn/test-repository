@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RecipeBook</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="top_box">
+        <header>
+            <h1>RECIPE BOOK</h1>
+        </header>
+        <h1><br></h1>
+        <span class="no_select">&#8212;</span>
+    </div>
+    <script>
+        function reveal() {
+            var reveals = document.querySelectorAll(".reveal");
+
+            for (var i = 0; i < reveals.length; i++) {
+                var windowHeight = window.innerHeight;
+                var elementTop = reveals[i].getBoundingClientRect().top;
+                var elementVisible = 1;
+
+                if (elementTop < windowHeight - elementVisible) {
+                    reveals[i].classList.add("active");
+                } else {
+                    reveals[i].classList.remove("active");
+                }
+            }
+        }
+
+        window.addEventListener("scroll", reveal);
+
+    </script>
+    <main>
+        <article>
+            <div class="reveal">
+                <section>
+                    <header>
+                        <h2>Favourite Recipes</h2>
+                    </header>
+            </div>
+            </section>
+        </article>
+
+    </main>
+</body>
+
+</html>

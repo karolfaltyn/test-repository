@@ -1,0 +1,109 @@
+:root {
+  margin: 0;
+  padding: 0;
+}
+body {
+  margin: 0 auto;
+  color: black;
+  background-image: url("img/swirl_pattern.png");
+  height: 3000px;
+}
+.top_box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  background-color: #fff;
+  margin-bottom: 15vh;
+}
+.top_box h1,
+.top_box span {
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  font-size: 10rem;
+  font-weight: bolder;
+}
+.top_box span {
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+}
+.no_select,
+h1,
+h2 {
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Safari */
+  -khtml-user-select: none; /* Konqueror HTML */
+  -moz-user-select: none; /* Old versions of Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge */
+  user-select: none; /* Non-prefixed version, currently
+  supported by Chrome, Edge, Opera and Firefox */
+}
+main {
+  width: 60vw;
+  margin: 0 auto;
+}
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: 1s all ease;
+}
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+.reveal h2 {
+  font-size: 4rem;
+  text-align: center;
+  margin-bottom: 8vh;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media (max-width: 600px) {
+  .top_box h1,
+  .top_box span {
+    font-size: 3rem;
+  }
+  .reveal h2 {
+    font-size: 2rem;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media (min-width: 600px) {
+  .top_box h1,
+  .top_box span {
+    font-size: 5rem;
+  }
+  .reveal h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media (min-width: 768px) {
+  .top_box h1,
+  .top_box span {
+    font-size: 5rem;
+  }
+  .reveal h2 {
+    font-size: 3rem;
+  }
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media (min-width: 992px) {
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .top_box h1,
+  .top_box span {
+    font-size: 8rem;
+  }
+}
