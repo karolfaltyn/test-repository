@@ -1,16 +1,12 @@
 # Test Repository
 
-  
-
 My first GitHub repository.
 
-  
 ## Introduction
-This repo is mostly used to store useful code that i use in other repositories.
+
+This repo is mostly used to store useful code that I use in other repositories.
 
 Sometimes it is used to test fragments of code before I add it to final repo.
-
-  
 
 ### Inside are:
 
