@@ -1,0 +1,3 @@
+Most of the time, a service used to manage API integrations. So, it separated from logic in the component.
+
+Service is not a react component. It simply a javascript function to manage API integration based on the type of data.

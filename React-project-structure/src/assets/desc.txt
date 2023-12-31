@@ -1,0 +1,3 @@
+The assets folder contains images and css folder for styling.
+
+If you prefer to include style in each component, that’s not a problem. But, you should consider locating a default or shared styling here.

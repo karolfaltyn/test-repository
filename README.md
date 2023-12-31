@@ -1,7 +1,18 @@
 # Test Repository
 
-My first Github repository.
+  
 
-Currently I am testing code inside before I add it to final repo.
+My first GitHub repository.
 
-Inside are css reset and other helpful code to copy.
+  
+## Introduction
+This repo is mostly used to store useful code that i use in other repositories.
+
+Sometimes it is used to test fragments of code before I add it to final repo.
+
+  
+
+### Inside are:
+
+- CSS Reset code modified for my needs
+- React projects folders structure

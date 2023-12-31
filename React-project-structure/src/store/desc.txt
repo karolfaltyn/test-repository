@@ -1,0 +1,5 @@
+The store folder will be included if you decide to use redux in your project. Inside it, there are actions and reducers subfolder to manage redux states.
+
+Mostly, the actions and reducers will be called in the page components so they usually named based on pages that use them.
+
+If your application is a small-to-medium scale project, try to maximize the usage of the props and states component before using redux. If that’s too complicated, well, you can use redux.
